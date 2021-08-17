@@ -1,0 +1,81 @@
+.promo {
+  &::after {
+    display: block;
+    content: "";
+    width: 320px;
+    height: 6px;
+    background-image: url("/source/img/mobile/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.promo__wrapper {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.promo__heading {
+  margin: 0;
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $basic-black;
+}
+
+.promo__stock {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-green-lighten;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.promo__list {
+  margin: 0;
+  line-height: 20px;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $basic-white-100;
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
+}
+
+.promo__parameter {
+  min-width: 97px;
+}
+
+.promo__value {
+  margin: 0;
+  min-width: 162px;
+}
+
+.promo__price {
+  font-weight: bold;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.promo__button {
+  margin-bottom: 36px;
+}

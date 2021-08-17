@@ -1,0 +1,20 @@
+.main-nav {
+  grid-column: 3 / -1;
+  grid-row: 1 / 2;
+  margin: auto;
+  margin-right: 0;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+.main-nav__toggle {
+  position: relative;
+  border: none;
+  padding: 0;
+}
+
+.main-nav__delivery {
+  display: none;
+}

@@ -3,24 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Магазин вязаных игрушек ручной работы «Мишка»</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+      <img src="img/mobile/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+          <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+          <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+        </svg>
         <span class="visually-hidden">
           Открыть меню
         </span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list list-reset">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">
               Каталог товаров
@@ -32,21 +38,19 @@
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list list-reset">
           <li class="site-list__item">
-            <a class="site-list__link" href="">
-              <span class="visually-hidden">
-                Поиск по сайту
-              </span>
+            <a class="site-list__link site-list__link--search" href="">
+              Поиск по сайту
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="">
+            <a class="site-list__link site-list__link--cart" href="">
               Корзина: пока пуста
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list list-reset">
           <li class="site-list__item">
             <a class="site-list__link" href="">
               Новые поступления
@@ -75,61 +79,63 @@
         <h2 class="intro__heading">
           Милые штуки ручной работы для дома
         </h2>
-        <img class="intro__image" src="img/hero-mobile.jpg" width="320" height="287" alt="Домик с игрушками">
+        <img class="intro__image" src="img/mobile/hero-mobile.jpg" width="320" height="373" alt="Домик с игрушками">
         <div class="intro__links">
-          <a class="intro__link">
-            Предметы интерьера
+          <a class="intro__link intro__link--interior">
+            Предметы<br>интерьера
           </a>
-          <a class="intro__link">
-            Детские игрушки
+          <a class="intro__link intro__link--toys">
+            Детские<br>игрушки
           </a>
         </div>
       </div>
     </section>
 
     <section class="promo">
-      <h2 class="promo__heading">
-        Вязаные корзинки
-      </h2>
-      <p class="promo__stock">
-        Товар недели
-      </p>
-      <p class="promo__text">
-        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
-      </p>
-      <dl class="promo__list">
-        <div class="promo__item">
-          <dt class="promo__parameter">
-            Цвет
-          </dt>
-          <dd class="promo__value">
-            «Тиффани»/серый
-          </dd>
-        </div>
-        <div class="promo__item">
-          <dt class="promo__parameter">
-            Диаметр
-          </dt>
-          <dd class="promo__value">
-            25 см
-          </dd>
-        </div>
-        <div class="promo__item">
-          <dt class="promo__parameter">
-            Высота
-          </dt>
-          <dd class="promo__value">
-            15 см
-          </dd>
-        </div>
-      </dl>
-      <img class="promo__image" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Три вязаные корзинки">
-      <p class="promo__price">
-        Цена: 990 руб.
-      </p>
-      <a class="promo__button button" href="">
-        Заказать
-      </a>
+      <div class="promo__wrapper">
+        <h2 class="promo__heading">
+          Вязаные корзинки
+        </h2>
+        <p class="promo__stock">
+          Товар недели
+        </p>
+        <p class="promo__text">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
+        </p>
+        <dl class="promo__list">
+          <div class="promo__item">
+            <dt class="promo__parameter">
+              Цвет
+            </dt>
+            <dd class="promo__value">
+              «Тиффани»/серый
+            </dd>
+          </div>
+          <div class="promo__item">
+            <dt class="promo__parameter">
+              Диаметр
+            </dt>
+            <dd class="promo__value">
+              25 см
+            </dd>
+          </div>
+          <div class="promo__item">
+            <dt class="promo__parameter">
+              Высота
+            </dt>
+            <dd class="promo__value">
+              15 см
+            </dd>
+          </div>
+        </dl>
+        <img class="promo__image" src="img/mobile/triple-set-mobile-1.jpg" width="260" height="315" alt="Три вязаные корзинки">
+        <p class="promo__price">
+          Цена: 990 руб.
+        </p>
+        <a class="promo__button button" href="">
+          Заказать
+        </a>
+      </div>
     </section>
 
     <section class="about-us">
@@ -137,7 +143,7 @@
         <h2 class="about-us__heading">
           Коротко о нас:
         </h2>
-        <ul class="about-us__list">
+        <ul class="about-us__list list-reset">
           <li class="about-us__item">
             Экологически чистые материалы
           </li>
@@ -166,7 +172,7 @@
           Отзывы
         </h2>
         <div class="reviews__list slider">
-          <div class="reviews__item slider__item">
+          <div class="reviews__item slider__item slider__item--show">
             <blockquote class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </blockquote>
@@ -200,13 +206,13 @@
             </p>
           </div>
         </div>
-        <p class="reviews__slider-controls slider__button">
-          <button class="slider__button-back" type="button">
+        <p class="reviews__slider-controls slider-controls">
+          <button class="slider__button slider__button-back" type="button">
             <span class="visually-hidden">
               Назад
             </span>
           </button>
-          <button class="slider__button-forward" type="button">
+          <button class="slider__button slider__button-forward" type="button">
             <span class="visually-hidden">
               Вперёд
             </span>
@@ -236,16 +242,18 @@
             адрес:
           </p>
           <address class="contacts__value">
-            г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
+            г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101
           </address>
         </div>
       </div>
       <div class="contacts__map">
-        <img src="img/map-mobile.jpg" width="320" height="454" alt="Адрес на карте">
+        <img src="img/mobile/map.jpg" width="320" height="454" alt="Адрес на карте">
       </div>
-      <a class="contacts__button button" href="#">
-        Напишите нам
-      </a>
+      <div class="contacts__wrapper">
+        <a class="contacts__button button" href="#">
+          Напишите нам
+        </a>
+      </div>
     </section>
   </main>
 
@@ -254,20 +262,26 @@
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="">
       </a>
-      <ul class="social">
+      <ul class="social list-reset">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="">
-            Мы в Инстаграме
+            <span class="visually-hidden">
+              Мы в Инстаграме
+            </span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="">
-            Мы в Фейсбуке
+            <span class="visually-hidden">
+              Мы в Фейсбуке
+            </span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--twitter" href="">
-            Мы в Твиттер
+            <span class="visually-hidden">
+              Мы в Твиттер
+            </span>
           </a>
         </li>
       </ul>
@@ -290,18 +304,20 @@
       <p class="modal__text">
         Выберите размер:
       </p>
-      <label class="modal__label">
-        <input class="modal__input" type="radio" name="size" value="S">
-        S
-      </label>
-      <label class="modal__label">
-        <input class="modal__input" type="radio" name="size" value="M">
-        M
-      </label>
-      <label class="modal__label">
-        <input class="modal__input" type="radio" name="size" value="L">
-        L
-      </label>
+      <div class="modal__wrapper">
+        <label class="modal__label modal__label--current">
+          <input class="modal__input visually-hidden" type="radio" name="size" value="S">
+          S
+        </label>
+        <label class="modal__label">
+          <input class="modal__input visually-hidden" type="radio" name="size" value="M">
+          M
+        </label>
+        <label class="modal__label">
+          <input class="modal__input visually-hidden" type="radio" name="size" value="L">
+          L
+        </label>
+      </div>
       <button class="modal__button-submit" type="submit">
         Добавить
       </button>

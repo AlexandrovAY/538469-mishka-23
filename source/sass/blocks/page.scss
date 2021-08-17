@@ -1,0 +1,56 @@
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  max-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: $basic-gray;
+  background-color: $basic-white;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 79px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.page-header__logo {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  margin: auto;
+}
+
+.page-footer {
+  background: $basic-white-200;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.page-footer__logo {
+  display: none;
+  order: 3;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  min-width: 182px;
+  min-height: 35px;
+}
