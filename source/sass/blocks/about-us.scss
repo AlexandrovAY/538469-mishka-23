@@ -1,8 +1,6 @@
-.about-us__wrapper {
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
-  overflow: hidden;
+.about-us {
+  padding-top: 31px;
+  padding-bottom: 30px;
 }
 
 .about-us__heading {
@@ -15,8 +13,6 @@
 }
 
 .about-us__list {
-  display: flex;
-  flex-direction: column;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -28,48 +24,42 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 94px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     display: block;
     content: "";
+    width: 55px;
+    height: 38px;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
   }
 
   &:nth-child(1)::before {
-    width: 33px;
-    height: 38px;
-    background-image: url("/source/img/mobile/icon-1.svg");
+    background-image: url("../img/mobile/icon-1.svg");
   }
 
   &:nth-child(2)::before {
-    width: 47px;
-    height: 27px;
-    background-image: url("/source/img/mobile/icon-3.svg");
+    background-image: url("../img/mobile/icon-3.svg");
   }
 
   &:nth-child(3)::before {
-    width: 34px;
-    height: 27px;
-    background-image: url("/source/img/mobile/icon-5.svg");
+    background-image: url("../img/mobile/icon-5.svg");
   }
 
   &:nth-child(4)::before {
-    width: 35px;
-    height: 34px;
-    background-image: url("/source/img/mobile/icon-2.svg");
+    background-image: url("../img/mobile/icon-2.svg");
   }
 
   &:nth-child(5)::before {
-    width: 55px;
-    height: 23px;
-    background-image: url("/source/img/mobile/icon-4.svg");
+    background-image: url("../img/mobile/icon-4.svg");
   }
 
   &:nth-child(6)::before {
-    width: 33px;
-    height: 32px;
-    background-image: url("/source/img/mobile/icon-6.svg");
+    background-image: url("../img/mobile/icon-6.svg");
   }
 }

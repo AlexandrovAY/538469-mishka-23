@@ -23,7 +23,7 @@
     left: 30px;
     width: 18px;
     height: 18px;
-    background-image: url("/source/img/mobile/search.svg");
+    background-image: url("../img/mobile/search.svg");
   }
 
   &--cart::before {
@@ -33,6 +33,6 @@
     left: 30px;
     width: 21px;
     height: 18px;
-    background-image: url("/source/img/mobile/cart.svg");
+    background-image: url("../img/mobile/cart.svg");
   }
 }

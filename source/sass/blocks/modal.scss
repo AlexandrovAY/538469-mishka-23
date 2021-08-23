@@ -1,19 +1,12 @@
 .modal {
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 29px;
-  padding-right: 30px;
+  padding-top: 28px;
   padding-bottom: 46px;
-  padding-left: 30px;
 }
 
 .modal__heading {
   margin: 0;
-  align-self: center;
   margin-bottom: 14px;
-  width: 176px;
-  height: 61px;
   text-align: center;
   font-weight: bold;
   font-size: 25px;
@@ -24,20 +17,18 @@
 .modal__text {
   margin: 0;
   margin-bottom: 22px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
-.modal__wrapper {
+.modal__inner {
   display: flex;
+  justify-content: space-between;
 }
 
 .modal__label {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-right: 7px;
   margin-bottom: 31px;
   width: 82px;
   height: 52px;
@@ -53,13 +44,14 @@
 }
 
 .modal__button-submit {
-  min-width: 260px;
-  min-height: 52px;
-  background: $basic-green-lighten;
-  font-weight: bold;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: none;
+  background-color: $basic-green-lighten;
+  color: $basic-white;
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
   text-transform: uppercase;
-  color: $basic-white;
-  border: none;
 }

@@ -1,0 +1,28 @@
+.order {
+  padding-top: 17px;
+  padding-bottom: 55px;
+}
+
+.order__wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.order__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 13px;
+
+  &--desc {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.order__button {
+  width: 100%;
+  font-size: 17px;
+  line-height: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

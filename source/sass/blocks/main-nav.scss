@@ -1,18 +1,14 @@
-.main-nav {
-  grid-column: 3 / -1;
-  grid-row: 1 / 2;
-  margin: auto;
-  margin-right: 0;
-}
-
 .main-nav__list {
   display: none;
 }
 
 .main-nav__toggle {
-  position: relative;
-  border: none;
+  position: absolute;
+  top: 10px;
+  right: 31px;
   padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .main-nav__delivery {
