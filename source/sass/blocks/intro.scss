@@ -1,0 +1,51 @@
+.intro__heading {
+  position: absolute;
+  margin: 0;
+  margin-top: 73px;
+  padding: 0 30px;
+  color: $basic-black;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.intro__links {
+  margin-top: -6px;
+}
+
+.intro__link {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-right: 27px;
+  padding-bottom: 18px;
+  font-weight: bold;
+  font-size: 19px;
+  color: $basic-white;
+  background-color: $basic-green-lighten;
+
+  &:last-child {
+    background-color: $basic-green-darken;
+  }
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--interior {
+    &::after {
+      background-image: url("../img/mobile/interior.svg");
+    }
+  }
+
+  &--toys {
+    &::after {
+      background-image: url("../img/mobile/toy.svg");
+    }
+  }
+}

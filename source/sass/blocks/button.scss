@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background: $basic-white;
+  border: 2px solid $basic-gray;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: $basic-gray;
+  text-transform: uppercase;
+}

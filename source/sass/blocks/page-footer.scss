@@ -1,0 +1,26 @@
+.page-footer {
+  background: $basic-white-200;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 20px;
+}
+
+.page-footer__logo {
+  display: none;
+  order: 3;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 19px;
+  min-width: 182px;
+  min-height: 35px;
+}

@@ -1,0 +1,38 @@
+.site-list {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.site-list__link {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 76px;
+  color: $basic-black;
+  width: 320px;
+  height: 79px;
+  background: $basic-white;
+  box-shadow: 0 1px 0 $basic-white-100, inset 0 1px 0 $basic-white-100;
+
+  &--search::before {
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: 30px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/mobile/search.svg");
+  }
+
+  &--cart::before {
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: 30px;
+    width: 21px;
+    height: 18px;
+    background-image: url("../img/mobile/cart.svg");
+  }
+}
