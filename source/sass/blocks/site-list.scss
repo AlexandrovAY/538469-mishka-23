@@ -4,6 +4,89 @@
   line-height: 24px;
 }
 
+.site-list--catalog {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 336px;
+    position: absolute;
+    left: 50px;
+    bottom: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    position: static;
+    justify-content: start;
+  }
+}
+
+.site-list--catalog a {
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    box-shadow: none;
+  }
+}
+
+.site-list--catalog li {
+  @media (min-width: $desktop-width) {
+    margin-right: 41px;
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+}
+
+.site-list--search {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 6px;
+    right: 50px;
+  }
+}
+
+.site-list--search span {
+  display: none;
+}
+
+.site-list--new {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    bottom: -60px;
+    left: 50px;
+  }
+
+  a {
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
+
+  li {
+    @media (min-width: $desktop-width) {
+      margin-right: 41px;
+    }
+  }
+
+  li:last-child {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+}
+
 .site-list__link {
   position: relative;
   display: flex;
@@ -13,8 +96,16 @@
   color: $basic-black;
   width: 320px;
   height: 79px;
-  background: $basic-white;
+  background-color: $basic-white;
   box-shadow: 0 1px 0 $basic-white-100, inset 0 1px 0 $basic-white-100;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
+    padding-left: 83px;
+    box-shadow: none;
+    background-color: transparent;
+  }
 
   &--search::before {
     position: absolute;
@@ -24,6 +115,11 @@
     width: 18px;
     height: 18px;
     background-image: url("../img/mobile/search.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 4px;
+      left: 40px;
+    }
   }
 
   &--cart::before {
@@ -34,5 +130,10 @@
     width: 21px;
     height: 18px;
     background-image: url("../img/mobile/cart.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 4px;
+      left: 40px;
+    }
   }
 }

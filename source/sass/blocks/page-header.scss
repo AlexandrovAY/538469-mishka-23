@@ -1,9 +1,28 @@
 .page-header {
   padding-top: 22px;
   padding-bottom: 16px;
+  text-align: center;
 }
 
 .page-header__wrapper {
-  position: relative;
-  text-align: center;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    flex: 319px 1 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+

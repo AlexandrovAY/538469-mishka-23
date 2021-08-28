@@ -12,6 +12,12 @@
   align-items: center;
   background-color: $basic-white;
   border: 1px solid $basic-white-100;
+
+  @media (min-width: $desktop-width) {
+    min-width: min-content;
+    height: auto;
+    border: none;
+  }
 }
 
 .slider__button-back {

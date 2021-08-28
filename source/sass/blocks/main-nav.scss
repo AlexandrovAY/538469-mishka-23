@@ -1,16 +1,39 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    flex: 347px 1 0;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+  }
+}
+
 .main-nav__list {
   display: none;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 10px;
+  top: 32px;
   right: 31px;
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__delivery {
+  margin: 0;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: -60px;
+  }
 }

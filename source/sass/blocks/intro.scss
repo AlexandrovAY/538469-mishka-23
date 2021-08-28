@@ -1,3 +1,22 @@
+.intro {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    min-height: 744px;
+  }
+}
+
+.intro__wrapper {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
 .intro__heading {
   position: absolute;
   margin: 0;
@@ -8,10 +27,27 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .intro__links {
   margin-top: -6px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .intro__link {

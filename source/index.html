@@ -8,10 +8,9 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper wrapper">
+    <div class="page-header__wrapper">
       <a class="page-header__logo">
         <img src="img/mobile/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
       </a>
@@ -27,22 +26,24 @@
           </span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list list-reset">
+          <ul class="main-nav__list site-list site-list--catalog list-reset">
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link site-list__link-catalog" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+              <a class="site-list__link site-list__link-order" href="form.html">
                 Вязание на заказ
               </a>
             </li>
           </ul>
-          <ul class="main-nav__list site-list list-reset">
+          <ul class="main-nav__list site-list site-list--search list-reset">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--search" href="">
-                Поиск по сайту
+                <span>
+                  Поиск по сайту
+                </span>
               </a>
             </li>
             <li class="site-list__item">
@@ -51,7 +52,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-nav__list site-list list-reset">
+          <ul class="main-nav__list site-list site-list--new list-reset">
             <li class="site-list__item">
               <a class="site-list__link" href="">
                 Новые поступления
@@ -77,17 +78,19 @@
     </h1>
 
     <section class="intro">
-      <h2 class="intro__heading">
-        Милые штуки ручной<br> работы для дома
-      </h2>
-      <img class="intro__image" src="img/mobile/hero-mobile.jpg" width="320" height="283" alt="Домик с игрушками">
-      <div class="intro__links">
-        <a class="intro__link intro__link--interior wrapper">
-          Предметы<br>интерьера
-        </a>
-        <a class="intro__link intro__link--toys wrapper">
-          Детские<br>игрушки
-        </a>
+      <div class="intro__wrapper wrapper">
+        <h2 class="intro__heading">
+          Милые штуки ручной<br> работы для дома
+        </h2>
+        <img class="intro__image" src="img/mobile/hero-mobile.jpg" width="320" height="283" alt="Домик с игрушками">
+        <div class="intro__links">
+          <a class="intro__link intro__link--interior wrapper">
+            Предметы<br>интерьера
+          </a>
+          <a class="intro__link intro__link--toys wrapper">
+            Детские<br>игрушки
+          </a>
+        </div>
       </div>
     </section>
 
@@ -245,11 +248,9 @@
             г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101
           </address>
         </div>
-      </div>
-      <div class="contacts__map">
-        <img src="img/mobile/map.jpg" width="320" height="454" alt="Адрес на карте">
-      </div>
-      <div class="contacts__wrapper wrapper">
+        <div class="contacts__map">
+          <img src="img/mobile/map.jpg" width="320" height="454" alt="Адрес на карте">
+        </div>
         <a class="contacts__button button" href="#">
           Напишите нам
         </a>
@@ -258,11 +259,11 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper wrapper">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/tablet/logo-footer.svg" width="102" height="34" alt="">
       </a>
-      <ul class="social list-reset">
+      <ul class="page-footer__social social list-reset">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
