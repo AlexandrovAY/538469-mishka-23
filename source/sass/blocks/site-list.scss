@@ -1,7 +1,55 @@
-.site-list {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
+.site-list--catalog a {
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    box-shadow: none;
+  }
+}
+
+.site-list--catalog li {
+  @media (min-width: $desktop-width) {
+    margin-right: 41px;
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+}
+
+.site-list--new {
+  a {
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      width: 84px;
+      border-left: 1px solid fade-out($basic-black, 0.9);
+      border-right: 1px solid fade-out($basic-black, 0.9);
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      width: 264px;
+      justify-content: flex-start;
+      padding-left: 31px;
+    }
+  }
 }
 
 .site-list__link {
@@ -13,26 +61,62 @@
   color: $basic-black;
   width: 320px;
   height: 79px;
-  background: $basic-white;
+  background-color: $basic-white;
   box-shadow: 0 1px 0 $basic-white-100, inset 0 1px 0 $basic-white-100;
 
-  &--search::before {
+  &--search span {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--cart svg {
+    margin-right: 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  /* &--search::before {
     position: absolute;
     content: "";
     top: 32px;
     left: 30px;
     width: 18px;
     height: 18px;
-    background-image: url("../img/mobile/search.svg");
-  }
+    background-image: url("../img/search.svg");
 
-  &--cart::before {
+    @media (min-width: $tablet-width) {
+      top: 4px;
+      left: 40px;
+    }
+  } */
+
+  /* &--cart::before {
     position: absolute;
     content: "";
     top: 32px;
     left: 30px;
     width: 21px;
     height: 18px;
-    background-image: url("../img/mobile/cart.svg");
-  }
+    background-image: url("../img/cart.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 4px;
+      left: 40px;
+    }
+  } */
 }

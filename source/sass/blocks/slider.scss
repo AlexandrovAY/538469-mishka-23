@@ -12,6 +12,19 @@
   align-items: center;
   background-color: $basic-white;
   border: 1px solid $basic-white-100;
+
+  @media (min-width: $tablet-width) {
+    min-width: min-content;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: min-content;
+    height: auto;
+    border: none;
+  }
 }
 
 .slider__button-back {
@@ -19,7 +32,11 @@
     content: "";
     width: 50px;
     height: 26px;
-    background-image: url("../img/mobile/huge-arrow-left.svg");
+    background-image: url("../img/huge-arrow-left.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 37px;
   }
 }
 
@@ -30,6 +47,6 @@
     content: "";
     width: 50px;
     height: 26px;
-    background-image: url("../img/mobile/huge-arrow-right.svg");
+    background-image: url("../img/huge-arrow-right.svg");
   }
 }
