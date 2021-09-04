@@ -1,9 +1,14 @@
 .wrapper {
   padding-left: 30px;
   padding-right: 30px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
   }
 }

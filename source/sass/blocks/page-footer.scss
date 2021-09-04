@@ -1,5 +1,17 @@
 .page-footer {
+  padding-top: 28px;
+  padding-bottom: 20px;
   background: $basic-white-200;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-bottom: 52px;
+  }
 }
 
 .page-footer__wrapper {
@@ -7,8 +19,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 28px;
-  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
