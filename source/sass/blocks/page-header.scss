@@ -6,22 +6,23 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
-    background: linear-gradient($basic-white 88px, $basic-gray-100 89px, $basic-gray-bg-hero 89px);
+    background-image: linear-gradient($basic-white 88px, $basic-gray-100 89px, $basic-gray-bg-hero 89px);
     padding-top: 0;
     padding-bottom: 16px;
   }
 }
 
-.page-header__wrapper {
-  max-width: $desktop-width;
-  margin: 0 auto;
+.page-header--inner {
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($basic-white 88px, $basic-gray-200 89px, $basic-white-200 89px);
+  }
+}
 
+.page-header__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-right: 50px;
-    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {

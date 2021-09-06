@@ -1,11 +1,31 @@
 .order {
-  padding-top: 17px;
-  padding-bottom: 55px;
+  padding-top: 18px;
+  padding-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -11px;
+    padding-top: 79px;
+    padding-bottom: 38px;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 134px;
+    padding-bottom: 34px;
+    top: -15px;
+    background-image: url("../img/zigzag-fill-desktop2.svg");
+    background-position: 0 0;
+  }
 }
 
 .order__wrapper {
-  padding-right: 30px;
-  padding-left: 30px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .order__text {
@@ -13,7 +33,20 @@
   margin-bottom: 30px;
   font-size: 13px;
 
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 6;
+    margin-bottom: 61px;
+  }
+
   &--desc {
+    margin-bottom: 29px;
     font-size: 14px;
     line-height: 16px;
   }

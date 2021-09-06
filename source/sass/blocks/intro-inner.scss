@@ -2,6 +2,15 @@
   padding-top: 73px;
   padding-bottom: 73px;
   background-color: $basic-white-200;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 94px;
+  }
 }
 
 .intro-inner__heading {
@@ -11,4 +20,27 @@
   line-height: 30px;
   text-align: center;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.intro-inner--catalog {
+  padding-top: 74px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 94px;
+  }
 }
