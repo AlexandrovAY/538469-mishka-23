@@ -12,6 +12,26 @@
     padding-top: 51px;
     padding-bottom: 52px;
   }
+
+  &--inner-form {
+    padding-top: 27px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 51px;
+      padding-bottom: 52px;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 51px;
+      padding-bottom: 52px;
+    }
+  }
 }
 
 .page-footer__wrapper {
