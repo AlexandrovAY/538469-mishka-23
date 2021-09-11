@@ -1,7 +1,30 @@
 .copyright__text {
   margin: 0;
+  margin-right: 27px;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
 }
+
+.copyright__link {
+  &:hover path {
+    fill: $basic-green-darken-hover;
+  }
+
+  &:active path {
+    fill: $basic-green-darken-hover;
+    opacity: 0.3;
+  }
+}
+
+/* .copyright__link-icon {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 0;
+} */

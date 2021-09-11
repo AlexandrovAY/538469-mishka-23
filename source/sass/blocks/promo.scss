@@ -18,11 +18,11 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 88px;
-    padding-bottom: 96px;
+    padding-bottom: 0;
     top: -17px;
-    background-image: url("../img/zigzag-fill-desktop.svg"), url("../img/zigzag-line-desktop.svg");
-    background-repeat: repeat-x, repeat-x;
-    background-position: 0 0, 0 100%;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
   }
 }
 
@@ -37,7 +37,7 @@
   }
 }
 
-.promo__wrapper {
+.promo__container {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: minmax(292px, 1fr) 42px 1fr 1fr;
@@ -46,6 +46,10 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr minmax(292px, 1fr) 58px repeat(3, 1fr);
     grid-template-rows: min-content;
+    padding-bottom: 96px;
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
   }
 }
 

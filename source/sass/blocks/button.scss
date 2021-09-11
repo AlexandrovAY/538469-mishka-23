@@ -10,4 +10,14 @@
   line-height: 20px;
   color: $basic-gray;
   text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    background: linear-gradient(0deg, $basic-gray, $basic-gray);
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 }
