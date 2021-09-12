@@ -1,45 +1,131 @@
 .modal {
-  display: none;
+  position: absolute;
+  top: 1045px;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 28px;
   padding-bottom: 46px;
+  background-color: $basic-white;
+  border: 1px solid $basic-gray-400;
+  box-shadow: 0 5px 10px $basic-black-opacity25;
+
+  @media (min-width: $tablet-width) {
+    top: 1531px;
+    padding-top: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 1113px;
+  }
+}
+
+.modal__overlay {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($basic-white, 0.9);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal__overlay--show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-right: 108px;
+    padding-left: 108px;
+  }
 }
 
 .modal__heading {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   text-align: center;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $basic-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    width: 354px;
+    margin-bottom: 12px;
+  }
+
+  & br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.modal__form {
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
 
 .modal__text {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 19px;
+  }
 }
 
 .modal__inner {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 31px;
 }
 
 .modal__label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 31px;
   width: 82px;
   height: 52px;
+  margin-right: 6px;
   background: $basic-white;
   border: 2px solid rgba($basic-gray, 0.1);
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
+  color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 
   &--current {
     border: 2px solid $basic-green-lighten;
+  }
+
+  &:hover {
+    border-color: rgba($basic-gray, 0.3);
+  }
+
+  &:active {
+    border-color: $basic-green-lighten-100;
   }
 }
 

@@ -6,7 +6,7 @@
     position: relative;
     top: -12px;
     padding-top: 91px;
-    padding-bottom: 41px;
+    padding-bottom: 40px;
     background-image: url("../img/zigzag-fill-tablet.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
@@ -25,15 +25,18 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    column-gap: 51px;
+    /* justify-content: space-between; */
+    gap: 51px;
   }
 }
 
 .products__item {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -43,11 +46,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0;
   }
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover .product__wrapper {
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1);
+  }
+
+  &:active .product__wrapper {
+    box-shadow: 0 3px 5px rgba($basic-black, 0.1);
   }
 }

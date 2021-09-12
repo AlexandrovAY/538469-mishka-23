@@ -1,6 +1,18 @@
 .social {
   display: flex;
   justify-content: space-between;
+  align-self: center;
   width: 142px;
   height: 28px;
+}
+
+.social__link {
+  &:hover path {
+    fill: $basic-green-darken-hover;
+  }
+
+  &:active path {
+    fill: $basic-green-darken-hover;
+    opacity: 0.3;
+  }
 }
