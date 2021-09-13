@@ -63,14 +63,19 @@
     order: 0;
   }
 
-  &:hover path {
+  &:hover .page-footer__logo-image,
+  &:focus .page-footer__logo-image {
     fill: $basic-green-darken-hover;
   }
 
-  &:active path {
+  &:active .page-footer__logo-image {
     fill: $basic-green-darken-hover;
     opacity: 0.3;
   }
+}
+
+.page-footer__logo-image {
+  fill: $basic-black;
 }
 
 .page-footer__copyright {

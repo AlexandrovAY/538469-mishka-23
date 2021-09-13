@@ -12,12 +12,17 @@
 }
 
 .copyright__link {
-  &:hover path {
+  &:hover .copyright__link-icon,
+  &:focus .copyright__link-icon {
     fill: $basic-green-darken-hover;
   }
 
-  &:active path {
+  &:active .copyright__link-icon {
     fill: $basic-green-darken-hover;
     opacity: 0.3;
   }
+}
+
+.copyright__link-icon {
+  fill: $basic-green-lighten;
 }

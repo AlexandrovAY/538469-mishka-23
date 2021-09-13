@@ -26,11 +26,12 @@
     border: none;
   }
 
-  &:hover path {
+  &:hover .slider__button-icon,
+  &:focus .slider__button-icon {
     opacity: 0.6;
   }
 
-  &:active path {
+  &:active .slider__button-icon {
     opacity: 0.3;
   }
 }

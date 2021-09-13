@@ -54,7 +54,8 @@
     margin-bottom: 0;
   }
 
-  &:hover .product__wrapper {
+  &:hover .product__wrapper,
+  &:focus .product__wrapper {
     box-shadow: 0 6px 10px rgba($basic-black, 0.1);
   }
 

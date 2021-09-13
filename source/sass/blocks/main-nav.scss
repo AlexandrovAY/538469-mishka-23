@@ -83,7 +83,8 @@
     }
   }
 
-  &:hover img {
+  &:hover img,
+  &:focus img {
     opacity: 0.6;
   }
 
