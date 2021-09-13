@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 44px;
-    padding-bottom: 52px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 51px;
-    padding-bottom: 59px;
+    padding-bottom: 34px;
   }
 }
 
@@ -20,7 +20,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -37,16 +36,13 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     margin-bottom: 41px;
-    font-weight: bold;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;
-    grid-row: 1 / 2;
     margin-bottom: 39px;
-    font-weight: bold;
     font-size: 53px;
     line-height: 57px;
   }
@@ -59,60 +55,15 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    font-weight: bold;
+    grid-column: 1 / -1;
+    column-gap: 0;
+    column-count: 2;
     font-size: 20px;
     line-height: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-  }
-
-  &:first-of-type {
-    margin-bottom: 29px;
-  }
-
-  &:last-of-type {
-    @media (min-width: $tablet-width) {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-column: 4 / 6;
-      grid-row: 2 / 3;
-    }
-  }
-}
-
-.about-us__list-first {
-  & li:nth-child(1)::before {
-    background-image: url("../img/icon-1.svg");
-  }
-
-  & li:nth-child(2)::before {
-    background-image: url("../img/icon-3.svg");
-  }
-
-  & li:nth-child(3)::before {
-    background-image: url("../img/icon-5.svg");
-  }
-}
-
-.about-us__list-second {
-  & li:nth-child(1)::before {
-    background-image: url("../img/icon-2.svg");
-  }
-
-  & li:nth-child(2)::before {
-    background-image: url("../img/icon-4.svg");
-  }
-
-  & li:nth-child(3)::before {
-    background-image: url("../img/icon-6.svg");
+    grid-column: 2 / 6;
   }
 }
 
@@ -125,6 +76,10 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -139,5 +94,29 @@
     height: 38px;
     background-repeat: no-repeat;
     background-position: left bottom;
+  }
+
+  &--materials::before {
+    background-image: url("../img/icon-1.svg");
+  }
+
+  &--price::before {
+    background-image: url("../img/icon-3.svg");
+  }
+
+  &--likes::before {
+    background-image: url("../img/icon-5.svg");
+  }
+
+  &--love::before {
+    background-image: url("../img/icon-2.svg");
+  }
+
+  &--manufacturer::before {
+    background-image: url("../img/icon-4.svg");
+  }
+
+  &--package::before {
+    background-image: url("../img/icon-6.svg");
   }
 }
