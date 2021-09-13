@@ -33,7 +33,6 @@
 
   &--cart {
     @media (min-width: $tablet-width) {
-      /* width: calc(50% + 13px); */
       font-weight: bold;
       font-size: 17px;
       line-height: 24px;
@@ -130,12 +129,10 @@
 .site-list__link {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding-left: 76px;
   color: $basic-black;
-  /* width: 320px;
-  height: 79px; */
   font-weight: bold;
   line-height: 24px;
   background-color: $basic-white;

@@ -36,13 +36,6 @@
 }
 
 .slider__button-back {
-  /* &::before {
-    content: "";
-    width: 50px;
-    height: 26px;
-    background-image: url("../img/huge-arrow-left.svg");
-  } */
-
   @media (min-width: $tablet-width) {
     margin-right: 37px;
   }
@@ -50,11 +43,4 @@
 
 .slider__button-forward {
   margin-left: -1px;
-
-  /* &::before {
-    content: "";
-    width: 50px;
-    height: 26px;
-    background-image: url("../img/huge-arrow-right.svg");
-  } */
 }
