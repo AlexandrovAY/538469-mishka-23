@@ -70,7 +70,6 @@
 .about-us__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 94px;
   margin-bottom: 29px;
 
@@ -91,9 +90,14 @@
     display: block;
     content: "";
     width: 55px;
+    margin-bottom: 16px;
     height: 38px;
     background-repeat: no-repeat;
     background-position: left bottom;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 19px;
+    }
   }
 
   &--materials::before {

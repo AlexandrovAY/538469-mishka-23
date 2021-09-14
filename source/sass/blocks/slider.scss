@@ -2,7 +2,7 @@
   display: block;
 }
 
-.slider__button {
+.slider-controls__button {
   min-width: 130px;
   height: 52px;
   padding: 0;
@@ -26,22 +26,22 @@
     border: none;
   }
 
-  &:hover .slider__button-icon,
-  &:focus .slider__button-icon {
+  &:hover .slider-controls__button-icon,
+  &:focus .slider-controls__button-icon {
     opacity: 0.6;
   }
 
-  &:active .slider__button-icon {
+  &:active .slider-controls__button-icon {
     opacity: 0.3;
   }
 }
 
-.slider__button-back {
+.slider-controls__button--back {
   @media (min-width: $tablet-width) {
     margin-right: 37px;
   }
 }
 
-.slider__button-forward {
+.slider-controls__button--forward {
   margin-left: -1px;
 }

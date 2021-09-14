@@ -236,16 +236,16 @@
             </div>
           </div>
           <p class="reviews__slider-controls slider-controls">
-            <button class="slider__button slider__button-back" type="button">
-              <svg class="slider__button-icon slider__button-icon-back"  width="50" height="26">
+            <button class="slider-controls__button slider-controls__button--back" type="button">
+              <svg class="slider-controls__button-icon"  width="50" height="26">
                 <use xlink:href="img/sprite.svg#huge-arrow-left"></use>
               </svg>
               <span class="visually-hidden">
                 Назад
               </span>
             </button>
-            <button class="slider__button slider__button-forward" type="button">
-              <svg class="slider__button-icon slider__button-icon-forward" width="50" height="26">
+            <button class="slider-controls__button slider-controls__button--forward" type="button">
+              <svg class="slider-controls__button-icon" width="50" height="26">
                 <use xlink:href="img/sprite.svg#huge-arrow-right"></use>
               </svg>
               <span class="visually-hidden">
@@ -351,37 +351,35 @@
     </div>
   </footer>
 
-  <div class="modal__overlay">
-    <section class="modal">
-      <div class="modal__wrapper wrapper">
-        <h2 class="modal__heading">
-          Добавить<br> в корзину
-        </h2>
-        <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
-          <p class="modal__text">
-            Выберите размер:
-          </p>
-          <div class="modal__inner">
-            <label class="modal__label">
-              <input class="modal__input visually-hidden" type="radio" name="size" value="S">
-              S
-            </label>
-            <label class="modal__label">
-              <input class="modal__input visually-hidden" type="radio" name="size" value="M">
-              M
-            </label>
-            <label class="modal__label">
-              <input class="modal__input visually-hidden" type="radio" name="size" value="L">
-              L
-            </label>
-          </div>
-          <button class="modal__button-submit" type="submit">
-            Добавить
-          </button>
-        </form>
-      </div>
-    </section>
-  </div>
+  <section class="modal">
+    <div class="modal__wrapper wrapper">
+      <h2 class="modal__heading">
+        Добавить<br> в корзину
+      </h2>
+      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+        <p class="modal__text">
+          Выберите размер:
+        </p>
+        <div class="modal__inner">
+          <label class="modal__label">
+            <input class="modal__input visually-hidden" type="radio" name="size" value="S">
+            S
+          </label>
+          <label class="modal__label">
+            <input class="modal__input visually-hidden" type="radio" name="size" value="M">
+            M
+          </label>
+          <label class="modal__label">
+            <input class="modal__input visually-hidden" type="radio" name="size" value="L">
+            L
+          </label>
+        </div>
+        <button class="modal__button-submit" type="submit">
+          Добавить
+        </button>
+      </form>
+    </div>
+  </section>
 
   <script src="js/script.min.js"></script>
 </body>

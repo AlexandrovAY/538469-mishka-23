@@ -185,6 +185,7 @@
   margin-top: 41px;
 
   @media (min-width: $tablet-width) {
+    width: 230px;
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     font-size: 17px;

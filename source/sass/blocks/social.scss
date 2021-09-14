@@ -1,9 +1,26 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   align-self: center;
-  width: 142px;
-  height: 28px;
+  width: 184px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    width: 181px;
+  }
+}
+
+.social__item {
+  margin-bottom: 21px;
+  align-self: center;
+  flex-basis: 61px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 60px;
+  }
 }
 
 .social__link {

@@ -15,35 +15,34 @@ navToggle.addEventListener('click', function() {
 
 const orderButton = document.querySelector(".promo__button");
 const cartButton = document.querySelectorAll(".product__price-cart");
-const modalOverlay = document.querySelector(".modal__overlay");
-const orderWindow = document.querySelector(".modal__overlay");
+const orderWindow = document.querySelector(".modal");
 
 if(orderButton) {
   orderButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    orderWindow.classList.add("modal__overlay--show");
+    orderWindow.classList.add("modal--overlay-show");
   });
 }
 
 if(cartButton) {
   for (let i = 0; i < cartButton.length; i++) {
     cartButton[i].addEventListener("click", function() {
-      orderWindow.classList.add("modal__overlay--show");
+      orderWindow.classList.add("modal--overlay-show");
     });
   }
 }
 
-if(modalOverlay) {
-  modalOverlay.addEventListener("click", function () {
-    orderWindow.classList.remove("modal__overlay--show");
+if(orderWindow) {
+  orderWindow.addEventListener("click", function () {
+    orderWindow.classList.remove("modal--overlay-show");
   });
 }
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (orderWindow.classList.contains("modal__overlay--show")) {
+    if (orderWindow.classList.contains("modal--overlay-show")) {
       evt.preventDefault();
-      orderWindow.classList.remove("modal__overlay--show");
+      orderWindow.classList.remove("modal--overlay-show");
     }
   }
 });
