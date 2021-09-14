@@ -138,7 +138,8 @@
   background-color: $basic-white;
   box-shadow: 0 1px 0 $basic-white-100, inset 0 1px 0 $basic-white-100;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($basic-black, 0.6);
   }
 
@@ -187,13 +188,19 @@
     background-color: transparent;
   }
 
-  &:hover path {
+  &:hover .site-list__link-icon,
+  &:focus .site-list__link-icon {
     fill: $basic-green-lighten;
     opacity: 1;
   }
 
-  &:active path {
+  &:active .site-list__link-icon {
     fill: $basic-green-lighten;
     opacity: 0.3;
   }
+}
+
+.site-list__link-icon {
+  fill: $basic-black;
+  opacity: 0.2;
 }

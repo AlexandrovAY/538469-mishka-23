@@ -12,6 +12,7 @@
   text-transform: uppercase;
 
   &:hover,
+  &:focus,
   &:active {
     background: linear-gradient(0deg, $basic-gray, $basic-gray);
     color: $basic-white;

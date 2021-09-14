@@ -27,7 +27,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::after {
       display: block;
     }
@@ -206,7 +207,8 @@
     background-color: transparent;
     transition: transform 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: translate(-50%, -50%) scale(1.2);
     }
 
@@ -214,7 +216,7 @@
       transform: translate(-50%, -50%) scale(0.8);
     }
 
-    &:active path {
+    &:active .production__button-icon {
       opacity: 0.3;
     }
   }

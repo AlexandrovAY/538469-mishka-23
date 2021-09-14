@@ -128,6 +128,7 @@
     }
 
     &:hover,
+    &:focus,
     &:active {
       color: $basic-green-darken-hover;
       text-decoration-color: $basic-green-darken-hover;

@@ -7,12 +7,15 @@
 }
 
 .social__link {
-  &:hover path {
-    fill: $basic-green-darken-hover;
+  color: $basic-black;
+
+  &:hover,
+  &:focus {
+    color: $basic-green-darken-hover;
   }
 
-  &:active path {
-    fill: $basic-green-darken-hover;
+  &:active {
+    color: $basic-green-darken-hover;
     opacity: 0.3;
   }
 }
